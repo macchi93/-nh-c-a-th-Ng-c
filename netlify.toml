@@ -2,8 +2,14 @@
   command = "npm run build"
   publish = "dist"
 
-# Cấu hình plugin html-validate trỏ đúng thư mục publish là "dist" thay vì "public"
+# Cấu hình plugin html-validate với tham số đầu vào đúng là "path"
 [[plugins]]
   package = "netlify-plugin-html-validate"
   [plugins.inputs]
-    validatorDir = "dist"
+    path = "dist"
+
+# Hỗ trợ định tuyến Single Page Application (SPA fallback)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
