@@ -1,0 +1,6 @@
+{
+  "name": "Thị Ngọc - Hệ Thống Chatbot AI Studio",
+  "description": "Không gian trải nghiệm chatbot AI thông minh của Thị Ngọc hỗ trợ giải trí, kết nối và công việc.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

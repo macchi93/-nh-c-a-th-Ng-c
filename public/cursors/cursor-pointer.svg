@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <!-- Filter for soft contrast shadow -->
+    <filter id="shadowPointer" x="-20%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="1" dy="1.5" stdDeviation="1" flood-color="#1f0926" flood-opacity="0.45"/>
+    </filter>
+    
+    <!-- Outline gradient -->
+    <linearGradient id="strokeGradPointer" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#541b5f" />
+      <stop offset="35%" stop-color="#7e246c" />
+      <stop offset="70%" stop-color="#9a3674" />
+      <stop offset="100%" stop-color="#551448" />
+    </linearGradient>
+
+    <!-- Clip path for Hand interior -->
+    <clipPath id="handClip">
+      <path d="M 9.5 1.5 
+               C 8 1.5 7.2 2.6 7.2 4.2 
+               L 7.2 13 
+               C 6.5 12 5.2 11.6 3.8 12.6 
+               C 2.4 13.6 2.5 15.4 3.4 16.6 
+               L 5.8 19.8 
+               L 5.8 24.5 
+               C 5.8 26 7 27 8.5 27 
+               L 15 27 
+               C 16.8 27 18.2 25.6 18.2 23.8 
+               L 18.4 17 
+               C 19 17 19.6 16.4 19.6 15.6 
+               C 19.6 14.8 19 14.2 18.2 14.2 
+               C 19 14.2 19.6 13.5 19.6 12.8 
+               C 19.6 12 19 11.4 18.2 11.4 
+               C 18.8 11.4 19.2 10.8 19.2 10 
+               C 19.2 9.2 18.4 8.5 17.5 8.5 
+               L 12.5 8.5 
+               L 12.5 4.2 
+               C 12.5 2.6 11.2 1.5 9.5 1.5 
+               Z" />
+    </clipPath>
+  </defs>
+
+  <g filter="url(#shadowPointer)">
+    <!-- Base hand shape & outer border -->
+    <path d="M 9.5 1.5 
+             C 8 1.5 7.2 2.6 7.2 4.2 
+             L 7.2 13 
+             C 6.5 12 5.2 11.6 3.8 12.6 
+             C 2.4 13.6 2.5 15.4 3.4 16.6 
+             L 5.8 19.8 
+             L 5.8 24.5 
+             C 5.8 26 7 27 8.5 27 
+             L 15 27 
+             C 16.8 27 18.2 25.6 18.2 23.8 
+             L 18.4 17 
+             C 19 17 19.6 16.4 19.6 15.6 
+             C 19.6 14.8 19 14.2 18.2 14.2 
+             C 19 14.2 19.6 13.5 19.6 12.8 
+             C 19.6 12 19 11.4 18.2 11.4 
+             C 18.8 11.4 19.2 10.8 19.2 10 
+             C 19.2 9.2 18.4 8.5 17.5 8.5 
+             L 12.5 8.5 
+             L 12.5 4.2 
+             C 12.5 2.6 11.2 1.5 9.5 1.5 
+             Z" 
+          fill="#fbf2f7" stroke="url(#strokeGradPointer)" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+
+    <!-- Interior Hydrangea petals clipped to hand -->
+    <g clip-path="url(#handClip)">
+      <rect x="0" y="0" width="32" height="32" fill="#faeff5" />
+
+      <!-- Sage green leaves at wrist -->
+      <ellipse cx="9" cy="25.5" rx="3.2" ry="1.6" transform="rotate(-15 9 25.5)" fill="#689366" />
+      <ellipse cx="14.5" cy="25" rx="3" ry="1.5" transform="rotate(20 14.5 25)" fill="#7ca679" />
+
+      <!-- Periwinkle / Blue petals (thumb & wrist base) -->
+      <circle cx="4.8" cy="16" r="2.5" fill="#99c4f1" />
+      <circle cx="6.8" cy="14" r="2.2" fill="#b1d6fa" />
+      <circle cx="7.5" cy="19.5" r="2.7" fill="#88b5e8" />
+      <circle cx="11" cy="23.5" r="2.4" fill="#a4cefa" />
+      <circle cx="14" cy="22.5" r="2.5" fill="#99c4f1" />
+
+      <!-- Lilac / Purple petals (palm center & folded fingers) -->
+      <circle cx="10" cy="15.5" r="2.8" fill="#ba7cc3" />
+      <circle cx="13.5" cy="17" r="2.7" fill="#a868b2" />
+      <circle cx="15.5" cy="13.5" r="2.4" fill="#ca90d1" />
+      <circle cx="15.5" cy="10" r="2.2" fill="#9957a3" />
+      <circle cx="11.8" cy="11" r="2.3" fill="#ba7cc3" />
+
+      <!-- Pastel Pink Hydrangea on Pointing Index Finger -->
+      <circle cx="9.8" cy="3.5" r="2" fill="#f8a7c2" />
+      <circle cx="9.8" cy="6.2" r="2.3" fill="#f9b7cd" />
+      <circle cx="8.5" cy="9" r="2.2" fill="#f492b2" />
+      <circle cx="10.8" cy="9" r="2" fill="#fbc5d7" />
+
+      <!-- 4-petal flower on index fingertip -->
+      <path d="M 9.5 4 C 8.5 3 8.5 2 9.5 1.5 C 10.5 2 10.5 3 9.5 4 Z" fill="#ffccd9" />
+      <path d="M 9.5 4 C 10.5 3 11.5 3 12 4 C 11.5 5 10.5 5 9.5 4 Z" fill="#ffaec4" />
+      <path d="M 9.5 4 C 10.5 5 10.5 6 9.5 6.5 C 8.5 6 8.5 5 9.5 4 Z" fill="#ffccd9" />
+      <path d="M 9.5 4 C 8.5 5 7.5 5 7 4 C 7.5 3 8.5 3 9.5 4 Z" fill="#ffaec4" />
+      <circle cx="9.5" cy="4" r="0.6" fill="#fff6d2" />
+
+      <!-- 4-petal flower in palm (Purple) -->
+      <path d="M 12 16 C 11 15 11 14 12 13.5 C 13 14 13 15 12 16 Z" fill="#dca0e6" />
+      <path d="M 12 16 C 13 15 14 15 14.5 16 C 14 17 13 17 12 16 Z" fill="#c382ce" />
+      <path d="M 12 16 C 13 17 13 18 12 18.5 C 11 18 11 17 12 16 Z" fill="#dca0e6" />
+      <path d="M 12 16 C 11 17 10 17 9.5 16 C 10 15 11 15 12 16 Z" fill="#c382ce" />
+      <circle cx="12" cy="16" r="0.7" fill="#fbf0b8" />
+
+      <!-- 4-petal flower on thumb (Blue) -->
+      <path d="M 5 15.5 C 4 14.5 4 13.5 5 13 C 6 13.5 6 14.5 5 15.5 Z" fill="#c1e0fc" />
+      <path d="M 5 15.5 C 6 14.5 7 14.5 7.5 15.5 C 7 16.5 6 16.5 5 15.5 Z" fill="#a4c9f5" />
+      <path d="M 5 15.5 C 6 16.5 6 17.5 5 18 C 4 17.5 4 16.5 5 15.5 Z" fill="#c1e0fc" />
+      <path d="M 5 15.5 C 4 16.5 3 16.5 2.5 15.5 C 3 14.5 4 14.5 5 15.5 Z" fill="#a4c9f5" />
+      <circle cx="5" cy="15.5" r="0.5" fill="#fff6d2" />
+    </g>
+
+    <!-- Top boundary stroke for crispness -->
+    <path d="M 9.5 1.5 
+             C 8 1.5 7.2 2.6 7.2 4.2 
+             L 7.2 13 
+             C 6.5 12 5.2 11.6 3.8 12.6 
+             C 2.4 13.6 2.5 15.4 3.4 16.6 
+             L 5.8 19.8 
+             L 5.8 24.5 
+             C 5.8 26 7 27 8.5 27 
+             L 15 27 
+             C 16.8 27 18.2 25.6 18.2 23.8 
+             L 18.4 17 
+             C 19 17 19.6 16.4 19.6 15.6 
+             C 19.6 14.8 19 14.2 18.2 14.2 
+             C 19 14.2 19.6 13.5 19.6 12.8 
+             C 19.6 12 19 11.4 18.2 11.4 
+             C 18.8 11.4 19.2 10.8 19.2 10 
+             C 19.2 9.2 18.4 8.5 17.5 8.5 
+             L 12.5 8.5 
+             L 12.5 4.2 
+             C 12.5 2.6 11.2 1.5 9.5 1.5 
+             Z" 
+          fill="none" stroke="url(#strokeGradPointer)" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+  </g>
+</svg>

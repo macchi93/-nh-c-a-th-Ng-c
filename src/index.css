@@ -1,0 +1,259 @@
+@import "tailwindcss";
+
+/* Custom Floral Cursor System (Hydrangea theme) */
+:root {
+  --cursor-default: url('/cursors/cursor-default.svg') 2 2, url('/cursors/cursor-default.png') 2 2, url('/cursors/1.png') 2 2, url('/1.png') 2 2, default;
+  --cursor-pointer: url('/cursors/cursor-pointer.svg') 10 2, url('/cursors/cursor-pointer.png') 10 2, url('/cursors/2.png') 10 2, url('/2.png') 10 2, pointer;
+}
+
+/* Default state: Image 1 floral arrow cursor across the page */
+html, 
+body, 
+#root, 
+div, 
+section, 
+header, 
+footer, 
+main, 
+article, 
+aside, 
+p, 
+span, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  cursor: var(--cursor-default);
+}
+
+/* Interactive elements: Image 2 pointing hand cursor */
+a,
+button,
+[role="button"],
+.cursor-pointer,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="checkbox"],
+input[type="radio"],
+input[type="file"],
+select,
+label,
+summary,
+[onclick],
+[tabindex="0"] {
+  cursor: var(--cursor-pointer) !important;
+}
+
+/* Text inputs maintain standard text cursor */
+input[type="text"],
+input[type="search"],
+input[type="password"],
+input[type="email"],
+textarea {
+  cursor: text !important;
+}
+
+/* Disabled elements */
+:disabled,
+[aria-disabled="true"],
+.disabled {
+  cursor: not-allowed !important;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1e293b;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+.font-handwriting {
+  font-family: 'Caveat', 'Dancing Script', cursive, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-dancing {
+  font-family: 'Dancing Script', 'Caveat', cursive, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Hydrangea floral background with fixed attachment and graceful fallback */
+.hydrangea-bg-container {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(135deg, rgba(255, 233, 239, 0.45) 0%, rgba(240, 245, 255, 0.35) 100%),
+    url('https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=2000&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+/* Backdrop blur overlay to make foreground content stand out cleanly */
+.blur-background {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Custom tone màu hồng nhạt #ffe9ef với hiệu ứng kính mờ (Glassmorphism) */
+.pink-glass-card {
+  background-color: rgba(255, 233, 239, 0.78);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 233, 239, 0.65);
+  box-shadow: 0 4px 20px -2px rgba(244, 114, 182, 0.08), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+/* Pink action button matching exact user specs */
+.pink-btn {
+  background-color: #ffe9ef;
+  color: #b54763;
+  border: 1px solid rgba(181, 71, 99, 0.2);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pink-btn:hover {
+  background-color: #ffd3df;
+  color: #9d334e;
+  border-color: rgba(181, 71, 99, 0.35);
+  box-shadow: 0 4px 12px rgba(181, 71, 99, 0.15);
+}
+
+.pink-btn:active {
+  transform: translateY(1px);
+}
+
+/* Responsive Grid for Chatbots:
+   - Mobile Portrait (đt dọc): 2 columns
+   - Mobile Landscape (đt ngang): 3 columns
+   - Tablet & PC: 3 columns
+*/
+.chatbot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 640px) {
+  .chatbot-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (orientation: landscape) {
+  .chatbot-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Header buttons mixing e6aad1, b49bbe, 9d70aa, 839cca, e36fc9, 353c9e */
+.header-nav-btn {
+  position: relative;
+  font-family: 'Caveat', 'Dancing Script', cursive, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem; /* Tăng 30% kích thước chữ (từ 16px lên ~21px) */
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  transition: all 0.25s ease;
+  background: transparent !important;
+  border: none !important;
+}
+
+@media (min-width: 640px) {
+  .header-nav-btn {
+    font-size: 1.65rem; /* Tăng 30% kích thước chữ trên desktop (từ 20px lên ~26px) */
+  }
+}
+
+/* Box nền và viền của 3 nút: màu #fff0f1, opacity 30%, contrast 70%, saturation 100% */
+.header-nav-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  opacity: 0.3; /* Opacity của box 30% */
+  filter: contrast(70%) saturate(100%); /* Contrast 70%, Saturation 100% */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 0.25s ease;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.header-nav-btn:hover::before {
+  opacity: 0.65;
+  filter: contrast(85%) saturate(100%);
+}
+
+.header-nav-btn > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Viền outline gradient rực rỡ nổi bật cho text */
+.header-nav-btn > span {
+  text-shadow: 
+    -1.2px -1.2px 0 #e36fc9,  
+     1.2px -1.2px 0 #9d70aa,
+     1.2px  1.2px 0 #839cca,
+    -1.2px  1.2px 0 #353c9e,
+     0px 0px 6px rgba(227, 111, 201, 0.45);
+}
+
+.header-btn-home::before {
+  background-image: 
+    linear-gradient(#fff0f1, #fff0f1),
+    linear-gradient(135deg, #e36fc9 0%, #9d70aa 30%, #839cca 65%, #353c9e 100%);
+}
+.header-btn-home {
+  color: #353c9e;
+}
+.header-btn-home:hover {
+  color: #262c82;
+  box-shadow: 0 4px 14px rgba(53, 60, 158, 0.2);
+  transform: translateY(-1.5px);
+}
+
+.header-btn-category::before {
+  background-image: 
+    linear-gradient(#fff0f1, #fff0f1),
+    linear-gradient(135deg, #e6aad1 0%, #e36fc9 35%, #9d70aa 70%, #353c9e 100%);
+}
+.header-btn-category {
+  color: #8a3499;
+}
+.header-btn-category:hover {
+  color: #6e1c7d;
+  box-shadow: 0 4px 14px rgba(227, 111, 201, 0.22);
+  transform: translateY(-1.5px);
+}
+
+.header-btn-feedback::before {
+  background-image: 
+    linear-gradient(#fff0f1, #fff0f1),
+    linear-gradient(135deg, #e36fc9 0%, #9d70aa 30%, #839cca 65%, #353c9e 100%);
+}
+.header-btn-feedback {
+  color: #2b3187;
+}
+.header-btn-feedback:hover {
+  color: #171c66;
+  box-shadow: 0 4px 14px rgba(53, 60, 158, 0.22);
+  transform: translateY(-1.5px);
+}
+
