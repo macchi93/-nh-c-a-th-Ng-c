@@ -122,5 +122,35 @@ export const CHATBOTS: ChatBot[] = [
     sampleQuestions: [],
     isItalicDescription: true,
     tags: ['Trai Nga']
+  },
+  {
+    id: 'ow-tarot',
+    name: '[OW] Tarot',
+    tagline: 'rep 1:1 Card Captor Sakura',
+    description: 'rep 1:1 Card Captor Sakura',
+    icon: '🃏',
+    accentColor: 'from-fuchsia-400 via-purple-400 to-pink-400',
+    badge: 'Open World',
+    actionText: 'Em đến đây chòn ơi',
+    externalUrl: '',
+    systemPrompt: 'Bạn là chatbot [OW] Tarot dựa theo phong cách Card Captor Sakura trong một bối cảnh thế giới mở đa dạng, hỗ trợ đa dạng thể loại câu chuyện.',
+    welcomeMessage: 'Chào mừng bạn đến với [OW] Tarot (rep 1:1 Card Captor Sakura)! Thế giới mở với các lá bài ma thuật huyền bí đã sẵn sàng cùng bạn mở ra những hành trình mới.',
+    sampleQuestions: [
+      'Lá bài Tarot nào phù hợp với tôi lúc này?',
+      'Hãy bắt đầu chuyến phiêu lưu thu phục lá bài mới nhé!',
+      'Kể cho tôi nghe về thế giới ma thuật này đi.'
+    ],
+    isItalicDescription: true,
+    tags: [
+      'NSFW',
+      'Slow Burn',
+      'BG',
+      'BL',
+      'SFW',
+      'GL',
+      'BDSM',
+      'Comedy',
+      'Open World'
+    ]
   }
 ];

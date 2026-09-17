@@ -18,6 +18,8 @@ export const TAG_LIST: string[] = [
   'Yandere',
   'Txvt',
   'Gaslight',
+  'GL',
+  'Open World',
 ];
 
 const BASE_TAG_DESCRIPTIONS: Record<string, string> = {
@@ -28,9 +30,11 @@ const BASE_TAG_DESCRIPTIONS: Record<string, string> = {
   'Dark Romance': 'Bật đèn lên coai, tối cá',
   'Enemies to Lovers': 'Oan gia ngõ hẹp, như chó với mèo',
   'Gaslight': 'Thi túng tâm láo',
+  'GL': 'Cắt kéo trên ggai',
   'Green Flag': 'Cờ xanh!!!',
   'NSFW': 'Sếch. Các bbi chưa đủ tuổi thì ra chỗ khác chơi',
   'Office': 'Nô lê tư bản!!!',
+  'Open World': 'Thế giới mở',
   'RomCom': 'Nó hề mà nó tình',
   'SFW': 'Lựa chọn cho các bbi muốn chơi theo route Platonic Love (\'chong xáng\', gắn kết tâm hồn)',
   'Slice of life': 'Mỗi ngày thức dậy là 1 niềm zui',
