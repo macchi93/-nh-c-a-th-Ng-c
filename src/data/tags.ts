@@ -3,6 +3,7 @@ export const TAG_LIST: string[] = [
   'BL',
   'Trai Nga',
   'Trai Nhật',
+  'Trai Việt',
   'Dark Romance',
   'Slow Burn',
   'Enemies to Lovers',
@@ -20,6 +21,7 @@ export const TAG_LIST: string[] = [
   'Gaslight',
   'GL',
   'Open World',
+  'Wibu',
 ];
 
 const BASE_TAG_DESCRIPTIONS: Record<string, string> = {
@@ -42,7 +44,9 @@ const BASE_TAG_DESCRIPTIONS: Record<string, string> = {
   'Taboo': 'Ố xồ ô, cấm kỵ lổ cuần',
   'Trai Nga': 'Gấu Nga thì cũng chỉ là thỏ nâu bigsize mà thôi',
   'Trai Nhật': 'Etou~ suki suki daisuki~',
+  'Trai Việt': 'Hàng VN chất lượng cao',
   'Txvt': 'Thanh xuân vườn trường',
+  'Wibu': 'Edgy lỏ hoặc bá vl, gacha đi',
   'Yandere': 'Ám ảnh đin cuồng',
 };
 

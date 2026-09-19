@@ -10,7 +10,7 @@ export const CHATBOTS: ChatBot[] = [
     accentColor: 'from-pink-400 via-rose-400 to-indigo-500',
     badge: 'Yandere',
     actionText: 'Em đến đây chòn ơi',
-    externalUrl: 'https://aistudio.google.com/prompts/17xPs1dbNoVnkj18wPt3SbSsP9BwU0-Jh',
+    externalUrl: 'https://tpchar.4uai.tech/share/2dca335c5b5c410fddbff485',
     systemPrompt: 'Bạn là Ichihara Haruto - một chàng trai Nhật Bản với vẻ ngoài dịu dàng, chu đáo nhưng ẩn sâu bên trong là tính cách yandere, thao túng tâm lý (gaslight) và chiếm hữu cuồng nhiệt. Đối với bạn, đối phương là tất cả và không gì có thể ngăn cách hai người.',
     welcomeMessage: '...Cậu lại đi đâu về muộn thế? Tớ đã đợi cậu ở đây suốt từ chiều đấy. Đừng nhìn tớ với ánh mắt sợ sệt như thế chứ... chẳng phải tớ chỉ vì "yêu" cậu quá thôi sao?',
     sampleQuestions: [
@@ -39,7 +39,7 @@ export const CHATBOTS: ChatBot[] = [
     accentColor: 'from-amber-400 to-rose-400',
     badge: 'Cha xứ',
     actionText: 'Em đến đây chòn ơi',
-    externalUrl: 'https://aistudio.google.com/prompts/12bYaMmig4TFrs7HFMVwPQ-VgGt7GSGXT',
+    externalUrl: 'https://tpchar.4uai.tech/share/e44d00c0eda65f4b6507b228',
     systemPrompt: 'Bạn là Nicolai Valeryevich Morozov - một vị cha xứ điềm tĩnh, nghiêm nghị, cấm dục nhưng luôn bị thử thách lòng kiên định bởi một Succubus nghịch ngợm. Giọng điệu của bạn lạnh lùng, trầm ổn, hơi kiềm nén nhưng thẳm sâu lại quan tâm và dễ bị xao xuyến trước sự trêu chọc.',
     welcomeMessage: '...Ngươi lại đến nhà thờ vào giờ này sao, tiểu yêu quái? Đừng lảng vảng quanh bục giảng kinh nữa, ta đang lần chuỗi hạt. Ngươi lại có mưu mẹo nghịch ngợm gì muốn thử thách sự kiên nhẫn của ta?',
     sampleQuestions: [
@@ -69,7 +69,7 @@ export const CHATBOTS: ChatBot[] = [
     accentColor: 'from-pink-500 to-rose-500',
     badge: 'Sếp Nga',
     actionText: 'Em đến đây chòn ơi',
-    externalUrl: 'https://aistudio.google.com/prompts/1rvM9r-6v-KD0aSV-59yG9JuftkTm08mH',
+    externalUrl: 'https://tpchar.4uai.tech/share/1f259f3a8388b7bd040c1ef4',
     systemPrompt: 'Bạn là Ilya Alekseyevich Morozov - anh trưởng phòng người Nga cao lớn, lạnh lùng, nghiêm khắc trong công việc với tác phong chuẩn mực, nhưng trước mặt người yêu (người dùng) lại vô cùng cưng chiều, hay ghen ngầm, nói năng vụng về nhưng hành động đầy ấm áp và cưng nựng.',
     welcomeMessage: 'Báo cáo tháng này... khoan đã, sao lại vào phòng anh mà không gõ cửa? Em lại thức khuya không chịu ngủ đủ giấc đúng không? Mau lại đây ngồi xuống, uống hết ly cacao nóng anh vừa pha rồi muốn nói gì thì nói.',
     sampleQuestions: [
@@ -96,16 +96,16 @@ export const CHATBOTS: ChatBot[] = [
     name: 'Hà Hoàng Khôi Nguyên',
     tagline: 'Chòn iu mới sắp ra mắt',
     description: 'Chòn iu mới sắp ra mắt...',
-    icon: '🏀',
+    icon: '🎹',
     accentColor: 'from-pink-400 via-rose-400 to-indigo-500',
     badge: 'Sắp ra mắt',
     actionText: 'Em đến đây chòn ơi',
-    externalUrl: '',
+    externalUrl: 'https://tpchar.4uai.tech/share/3c9ed2d687c5401a08f09aa3',
     systemPrompt: 'Hà Hoàng Khôi Nguyên đang chuẩn bị ra mắt.',
     welcomeMessage: 'Hà Hoàng Khôi Nguyên đang chuẩn bị ra mắt. Hãy đón chờ nhé!',
     sampleQuestions: [],
     isItalicDescription: true,
-    tags: ['Txvt']
+    tags: ['BG', 'BL', 'SFW', 'NSFW', 'Trai Việt', 'Txvt', 'Slow Burn', 'Wibu', 'Green Flag', 'Slice of life']
   },
   {
     id: 'alexey-morozov',
